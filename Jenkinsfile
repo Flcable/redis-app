@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build image docker'){
             steps{
-                sh 'docker build -t devops/app .' 
+                sh 'docker build -t /app .' 
             }
         }
         stage('subir docker compose - redis e app'){
